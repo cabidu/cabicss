@@ -1,0 +1,15 @@
+:root {
+  --button-color-bg: var(--color-gray-lighter);
+  --button-color: var(--color-black-lighter);
+
+  --button-brand-color-bg: var(--color-brand);
+  --button-brand-color: var(--color-white);
+
+  --button-success-color-bg: var(--color-success);
+  --button-success-color: var(--color-white);
+
+  --button-danger-color-bg: var(--color-danger);
+  --button-danger-color: var(--color-white);
+
+  --button-border-radius: 4px;
+}

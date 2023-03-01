@@ -1,0 +1,92 @@
+.input__group {
+  align-items: center;
+  display: flex;
+  gap: var(--space-2);
+  position: relative;
+
+  > .icon {
+    margin-left: var(--space-2);
+    position: absolute;
+  }
+
+  > .icon + .input__control {
+    padding-left: var(--space-10);
+  }
+
+  > .input__control:not([type="checkbox"]):not([type="radio"]),
+  > .input__select {
+    flex: 1 1 auto;
+  }
+
+  > .btn {
+    height: 38px;
+  }
+
+  > .input__check-type,
+  > .input__switch {
+    align-self: unset;
+  }
+}
+
+.input__group--icon-right {
+  > .input__control {
+    padding-right: var(--space-10);
+  }
+
+  > .input__control + .icon {
+    margin: 0 var(--space-2) 0 0;
+    right: 0;
+  }
+}
+
+.input__group--gapless {
+  gap: 0;
+
+  > :not(:first-child):not(:last-child),
+  > .input__select:not(:first-child):not(:last-child) select {
+    border-radius: 0;
+  }
+
+  > :first-child:not(:last-child):not([type="checkbox"]):not([type="radio"]):not(.input__check-type):not(.input__switch),
+  > .input__select:first-child:not(:last-child) select {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  > :last-child:not(:first-child),
+  > .input__select:last-child:not(:first-child) select {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  > :not(:first-child) {
+    border-left-width: 0;
+  }
+
+  > [type="checkbox"] + *,
+  > [type="radio"] + *,
+  > .input__check-type + *,
+  > .input__switch + * {
+    border-left-width: 1px;
+  }
+
+  > [type="checkbox"],
+  > [type="radio"] {
+    margin-right: var(--space-4);
+  }
+
+  > .input__check-type,
+  > .input__switch {
+    margin-right: var(--space-2);
+  }
+}
+
+.input__group-addon {
+  align-items: center;
+  background: var(--color-brand-lighter);
+  border: 1px solid var(--control-border-color);
+  border-radius: 5px;
+  display: flex;
+  height: 38px;
+  padding: var(--space-1) var(--space-3);
+}

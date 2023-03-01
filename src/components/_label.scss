@@ -1,0 +1,32 @@
+.label {
+  align-items: center;
+  background: var(--color-gray-light);
+  border: 1px solid transparent;
+  border-radius: var(--space-1);
+  color: var(--color-black-lighter);
+  display: inline-flex;
+  font-size: var(--label-size);
+  font-weight: 500;
+  height: 20px;
+  line-height: 1;
+  padding: 0 var(--space-2);
+  text-transform: uppercase;
+}
+
+.label--outlined {
+  border: 1px solid currentColor;
+}
+
+.label--rounded {
+  border-radius: var(--space-20);
+}
+
+.label--sharped {
+  border-radius: 0;
+}
+
+.label--cozy {
+  font-weight: 400;
+  height: auto;
+  padding: var(--space-2) var(--space-4);
+}

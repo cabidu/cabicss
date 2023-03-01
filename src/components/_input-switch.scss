@@ -1,0 +1,63 @@
+.input__switch {
+  position: relative;
+
+  [type="checkbox"],
+  [type="radio"] {
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+  }
+
+  [type="checkbox"] + *,
+  [type="radio"] + * {
+    min-height: 20px;
+    padding-left: calc(36px + var(--space-2));
+    position: relative;
+  }
+
+  [type="checkbox"] + *::before,
+  [type="radio"] + *::before {
+    background: var(--switch-color);
+    border-radius: 20px;
+    content: '';
+    height: 20px;
+    left: 0;
+    position: absolute;
+    transition: var(--transition-default);
+    width: 36px;
+  }
+
+  [type="checkbox"] + *::after,
+  [type="radio"] + *::after {
+    background: var(--color-white);
+    border-radius: 14px;
+    box-shadow: var(--switch-hander-shadow);
+    content: '';
+    height: 14px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    transition: var(--transition-default);
+    width: 14px;
+  }
+
+  [type="checkbox"]:checked + *::before,
+  [type="radio"]:checked + *::before {
+    background: var(--switch-checked-color);
+  }
+
+  [type="checkbox"]:checked + *::after,
+  [type="radio"]:checked + *::after {
+    box-shadow: 0 0 3px var(--color-black-light);
+    left: 19px;
+  }
+
+  [type="checkbox"]:focus + *::before,
+  [type="radio"]:focus + *::before {
+    border: 1px solid var(--control-focus-border-color);
+    box-shadow: var(--control-focus-shadow);
+  }
+}

@@ -1,0 +1,58 @@
+$color-brand: #2e5bff;
+$color-brand-ligth: mix($color-brand, #fff, 20%);
+$color-brand-ligther: mix($color-brand, #fff, 8%);
+$color-brand-soft: #e0e7ff;
+$color-brand-soft-light: mix($color-brand-soft, #fff, 20%);
+
+$color-success: #33ac2e;
+$color-success-light: mix($color-success, #fff, 20%);
+$color-danger: #d63649;
+$color-danger-light: mix($color-danger, #fff, 20%);
+$color-info: #00c1d4;
+$color-info-light: mix($color-info, #fff, 20%);
+$color-warning: #f7c137;
+$color-warning-light: mix($color-warning, #fff, 20%);
+$color-purple: #8c54ff;
+$color-purple-light: mix($color-purple, #fff, 20%);
+
+$color-white: #fff;
+$color-black: #2e384d;
+$color-black-light: #69707f;
+$color-black-lighter: #8798ad;
+$color-gray-dark: #b0bac9;
+$color-gray: #bfc5d2;
+$color-gray-light: #eef3f5;
+$color-gray-lighter: #f4f6fc;
+
+:root {
+  --color-brand: #{$color-brand};
+  --color-brand-light: #{$color-brand-ligth};
+  --color-brand-lighter: #{$color-brand-ligther};
+
+  --color-brand-soft: #{$color-brand-soft};
+  --color-brand-soft-light: #{$color-brand-soft-light};
+
+  --color-success: #{$color-success};
+  --color-success-light: #{$color-success-light};
+
+  --color-danger: #{$color-danger};
+  --color-danger-light: #{$color-danger-light};
+
+  --color-info: #{$color-info};
+  --color-info-light: #{$color-info-light};
+
+  --color-warning: #{$color-warning};
+  --color-warning-light: #{$color-warning-light};
+
+  --color-purple: #{$color-purple};
+  --color-purple-light: #{$color-purple-light};
+
+  --color-white: #{$color-white};
+  --color-black: #{$color-black};
+  --color-black-light: #{$color-black-light};
+  --color-black-lighter: #{$color-black-lighter};
+  --color-gray-dark: #{$color-gray-dark};
+  --color-gray: #{$color-gray};
+  --color-gray-light: #{$color-gray-light};
+  --color-gray-lighter: #{$color-gray-lighter};
+}

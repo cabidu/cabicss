@@ -1,0 +1,24 @@
+{
+  "name": "cabicss",
+  "version": "1.0.0",
+  "description": "A simple, nice looking and straightforward CSS styles lib for general usage provided by cabidu.",
+  "main": "src/index.scss",
+  "repository": "git@github.com:cabidu/cabicss.git",
+  "author": "Naylon Kessler de Aquino <naylon@cabidu.com>",
+  "license": "MIT",
+  "scripts": {
+    "clear": "rm -rf dist",
+    "dev": "node-sass --w src/index.scss dist/styles.css",
+    "prefix": "postcss --no-map --use autoprefixer -b 'last 5 versions' dist/styles.css -o dist/styles.css",
+    "compress": "node-sass dist/styles.css dist/styles.min.css --output-style compressed",
+    "compile": "node-sass src/index.scss dist/styles.css",
+    "prod": "npm-run-all clear compile prefix compress"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "node-sass": "^8.0.0",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "yarn-run-all": "^3.1.1"
+  }
+}

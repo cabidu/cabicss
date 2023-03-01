@@ -1,0 +1,49 @@
+[type="file"].input__control {
+  cursor: pointer;
+  padding: var(--space-1);
+
+  &::-ms-browse {
+    background: var(--file-button-background-color);
+    border: 1px solid var(--control-border-color);
+    border-radius: 3px;
+    cursor: pointer;
+    height: 100%;
+    margin-right: var(--space-2);
+    padding: 0 var(--space-4);
+    transition: var(--transition-default);
+  }
+
+  &::-webkit-file-upload-button {
+    background: var(--file-button-background-color);
+    border: 1px solid var(--control-border-color);
+    border-radius: 3px;
+    cursor: pointer;
+    height: 100%;
+    margin-right: var(--space-2);
+    padding: 0 var(--space-4);
+    transition: var(--transition-default);
+  }
+
+  &::file-selector-button {
+    background: var(--file-button-background-color);
+    border: 1px solid var(--control-border-color);
+    border-radius: 3px;
+    cursor: pointer;
+    height: 100%;
+    margin-right: var(--space-2);
+    padding: 0 var(--space-4);
+    transition: var(--transition-default);
+  }
+
+  &::-ms-browse:hover {
+    filter: brightness(80%) contrast(150%);
+  }
+
+  &::-webkit-file-upload-button:hover {
+    filter: brightness(80%) contrast(150%);
+  }
+
+  &::file-selector-button:hover {
+    filter: brightness(80%) contrast(150%);
+  }
+}

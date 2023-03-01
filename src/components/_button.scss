@@ -1,0 +1,58 @@
+.btn {
+  align-items: center;
+  background-color: var(--button-color-bg);
+  border: 0;
+  border-radius: var(--button-border-radius);
+  color: var(--button-color);
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 500;
+  height: 40px;
+  outline: 0;
+  padding: var(--space-2) var(--space-6);
+  transition: var(--transition-default);
+  vertical-align: middle;
+
+  &:hover {
+    filter: brightness(80%) contrast(150%);
+    text-decoration: none;
+  }
+
+  &:focus {
+  }
+
+  &:active {
+    filter: brightness(70%) contrast(200%);
+  }
+}
+
+.btn:disabled,
+.btn--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.btn--brand {
+  background: var(--button-brand-color-bg);
+  color: var(--button-brand-color);
+}
+
+.btn--success {
+  background: var(--button-success-color-bg);
+  color: var(--button-success-color);
+}
+
+.btn--danger {
+  background: var(--button-danger-color-bg);
+  color: var(--button-danger-color);
+}
+
+.btn--link {
+  background-color: transparent;
+  color: var(--button-brand-color-bg);
+}
+
+.btn--fit {
+  height: auto;
+  padding: 0;
+}

@@ -1,0 +1,35 @@
+.tile {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  gap: var(--space-4);
+}
+
+.tile__content {
+  flex: 1;
+
+  > * {
+    margin-bottom: 0;
+  }
+}
+
+.tile__main,
+.tile__secondary {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin-bottom: 0;
+
+  :last-child {
+    margin-left: var(--space-6);
+    text-align: right;
+  }
+}
+
+.tile__main {
+  font-weight: 500;
+}
+
+.tile__secondary {
+  color: var(--color-black-lighter);
+}

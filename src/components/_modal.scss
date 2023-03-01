@@ -1,0 +1,102 @@
+.modal-overlay {
+  background: #0007;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.modal {
+  align-self: flex-start;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  margin: var(--space-12) 0;
+  max-height: 90%;
+  max-width: 100%;
+  min-width: 300px;
+  width: 480px;
+}
+
+.modal__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-8);
+}
+
+.modal__title {
+  margin-bottom: 0;
+}
+
+.modal__close {
+  align-self: flex-start;
+}
+
+.modal__body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 var(--space-8);
+
+  &:first-child {
+    padding-top: var(--space-8);
+  }
+
+  &:last-child {
+    padding-bottom: var(--space-8);
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.modal__footer {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--space-8);
+
+  > :only-child {
+    margin-left: auto;
+  }
+
+  > :not(:last-child) {
+    margin-right: var(--space-2);
+  }
+}
+
+.modal--xs {
+  width: 300px;
+}
+
+.modal--sm {
+  width: 360px;
+}
+
+.modal--lg {
+  width: 600px;
+}
+
+.modal--xl {
+  width: 860px;
+}
+
+.modal--xxl {
+  width: 1024px;
+}
+
+.modal--wide {
+  width: 100%;
+}
+
+.modal--full {
+  height: 100%;
+  margin: 0;
+  max-height: 100%;
+  width: 100%;
+}

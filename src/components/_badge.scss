@@ -1,0 +1,53 @@
+.badge {
+  position: relative;
+
+  &::after {
+    background: var(--color-brand);
+    border-radius: 50px;
+    color: var(--color-white);
+    content: attr(data-badge);
+    font-weight: 400;
+    height: 6px;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    width: 6px;
+  }
+
+  &[data-badge]::after {
+    font-size: 0.625rem;
+    height: 16px;
+    min-width: 16px;
+    padding: 0.08rem var(--space-1);
+    right: 0;
+    text-align: center;
+    top: 0;
+    transform: translate(80%, -50%);
+    width: auto;
+  }
+
+  &.btn[data-badge]::after {
+    transform: translate(50%, -50%);
+  }
+
+  &.avatar::after {
+    font-size: 0.625rem;
+    transform: translate(0);
+  }
+
+  &.tabs__item::after {
+    transform: translate(-200%, 200%);
+  }
+
+  &.tabs__item[data-badge]::after {
+    transform: translate(-20%, 20%);
+  }
+}
+
+.badge--soft {
+  &::after {
+    background: var(--color-white);
+    box-shadow: 0px 3px 10px var(--color-brand-light);
+    color: var(--color-black-lighter);
+  }
+}

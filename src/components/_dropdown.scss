@@ -1,0 +1,25 @@
+.dropdown {
+  display: inline-flex;
+  position: relative;
+}
+
+.dropdown__trigger {
+  cursor: pointer;
+}
+
+.dropdown__panel {
+  background: var(--color-white);
+  min-width: 180px;
+  padding: var(--space-4);
+  position: absolute;
+  top: calc(100% + 3px);
+  z-index: 9;
+}
+
+.dropdown__panel--right {
+  right: 0;
+}
+
+.dropdown__panel--fit {
+  padding: 0;
+}

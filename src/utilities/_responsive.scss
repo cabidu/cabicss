@@ -1,0 +1,11 @@
+@media screen and (max-width: $tablet-width) {
+  .mhide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $laptop-width) {
+  .thide {
+    display: none;
+  }
+}

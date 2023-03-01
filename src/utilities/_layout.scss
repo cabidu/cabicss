@@ -1,0 +1,83 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+@for $i from 0 through $spaces-count {
+  .gap#{$i} {
+    gap: var(--space-#{$i});
+  }
+}
+
+@for $i from 0 through 6 {
+  .s#{$i} {
+    flex: #{$i};
+  }
+}
+
+.row.v-items-center {
+  align-items: center;
+}
+
+.row.v-items-top {
+  align-items: flex-start;
+}
+
+.row.v-items-bottom {
+  align-items: flex-end;
+}
+
+.row.h-items-center {
+  justify-content: center;
+}
+
+.row.h-items-left {
+  justify-content: flex-start;
+}
+
+.row.h-items-right {
+  justify-content: flex-end;
+}
+
+.col.v-items-center {
+  justify-content: center;
+}
+
+.col.v-items-top {
+  justify-content: flex-start;
+}
+
+.col.v-items-bottom {
+  justify-content: flex-end;
+}
+
+.col.h-items-center {
+  align-items: center;
+}
+
+.col.h-items-left {
+  align-items: flex-start;
+}
+
+.col.h-items-right {
+  align-items: flex-end;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}

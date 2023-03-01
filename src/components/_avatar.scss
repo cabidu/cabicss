@@ -1,0 +1,130 @@
+.avatar {
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  position: relative;
+  vertical-align: middle;
+  width: 48px;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.avatar[data-initials]::before {
+  align-items: center;
+  background: var(--color-brand-light);
+  border-radius: 100%;
+  color: var(--color-brand);
+  content: attr(data-initials);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.avatar--rounded {
+  border-radius: 6px;
+
+  img {
+    border-radius: 6px;
+  }
+}
+
+.avatar--us {
+  height: 24px;
+  width: 24px;
+
+  &[data-initials]::before {
+    font-size: 0.75rem;
+  }
+
+  .icon {
+    font-size: 14px;
+  }
+}
+
+.avatar--xs {
+  height: 32px;
+  width: 32px;
+
+  &[data-initials]::before {
+    font-size: 0.75rem;
+  }
+
+  .icon {
+    font-size: 16px;
+  }
+}
+
+.avatar--sm {
+  height: 36px;
+  width: 36px;
+
+  &[data-initials]::before {
+    font-size: 0.85rem;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+}
+
+.avatar--lg {
+  height: 54px;
+  width: 54px;
+
+  &[data-initials]::before {
+    font-size: 1.25rem;
+  }
+}
+
+.avatar--xl {
+  height: 64px;
+  width: 64px;
+
+  &[data-initials]::before {
+    font-size: 1.5rem;
+  }
+}
+
+.avatar--inverted[data-initials]::before {
+  background: var(--color-brand);
+  color: var(--color-white);
+}
+
+.avatar--soft,
+.avatar--soft[data-initials]::before {
+  background: var(--color-gray-light);
+  color: var(--color-brand);
+}
+
+.avatar__status {
+  background: var(--color-gray);
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+  position: absolute;
+  padding: 4px;
+  right: 14.64%;
+  top: 14.64%;
+  transform: translate(50%, -50%);
+}
+
+.avatar__status--online {
+  background: var(--color-success);
+}
+
+.avatar__status--busy {
+  background: var(--color-danger);
+}
+
+.avatar__status--away {
+  background: var(--color-warning);
+}
+
+.avatar__status--brand {
+  background: var(--color-brand);
+}

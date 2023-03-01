@@ -1,0 +1,55 @@
+.loading {
+  color: transparent !important;
+  min-height: 0.8rem;
+  min-width: 0.8rem;
+  pointer-events: none;
+  position: relative;
+
+  &::after {
+    animation: spin .4s infinite linear;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    border-right-color: var(--color-brand);
+    border-top-color: var(--color-brand);
+    content: '';
+    display: block;
+    height: 0.8rem;
+    left: 50%;
+    margin-left: -0.4rem;
+    margin-top: -0.4rem;
+    position: absolute;
+    top: 50%;
+    width: 0.8rem;
+    z-index: 1;
+  }
+
+  > * {
+    opacity: 0;
+  }
+}
+
+.loading--dark::after,
+.btn.loading::after {
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: var(--color-black-lighter);
+  border-left-color: var(--color-black-lighter);
+}
+
+.loading--inverted::after,
+.btn--brand.loading::after {
+  border-bottom-color: var(--color-white);
+  border-left-color: var(--color-white);
+}
+
+.loading--lg {
+  min-height: 1.6rem;
+  min-width: 1.6rem;
+
+  &::after {
+    height: 1.6rem;
+    margin-left: -0.8rem;
+    margin-top: -0.8rem;
+    width: 1.6rem;
+  }
+}

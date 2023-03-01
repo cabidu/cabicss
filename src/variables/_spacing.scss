@@ -1,0 +1,8 @@
+$spaces-count: 20;
+
+:root {
+  @for $i from 0 through $spaces-count {
+    --space-#{$i}: #{$i * 0.25rem};
+    --space--#{$i}: -#{$i * 0.25rem};
+  }
+}

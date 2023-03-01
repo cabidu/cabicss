@@ -1,0 +1,84 @@
+.font-xs {
+  font-size: var(--font-size-xs);
+}
+
+.font-sm {
+  font-size: var(--font-size-sm);
+}
+
+.font-md {
+  font-size: var(--font-size);
+}
+
+.font-lg {
+  font-size: var(--font-size-lg);
+}
+
+.font-xl {
+  font-size: var(--font-size-xl);
+}
+
+.font-xxl {
+  font-size: var(--font-size-xxl);
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-med {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.line-xs {
+  line-height: 1;
+}
+
+.line-sm {
+  line-height: 1.25;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-limit {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-limit--2 {
+  -webkit-line-clamp: 2;
+}
+
+.text-limit--3 {
+  -webkit-line-clamp: 3;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
