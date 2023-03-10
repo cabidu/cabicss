@@ -1,7 +1,7 @@
 {
   "name": "cabicss",
   "version": "1.0.0",
-  "description": "A simple, nice looking and straightforward CSS styles lib for general usage provided by cabidu.",
+  "description": "A simple, lightweight, nice looking and straightforward CSS styles lib for general usage provided by cabidu.",
   "main": "src/index.scss",
   "repository": "git@github.com:cabidu/cabicss.git",
   "author": "Naylon Kessler de Aquino <naylon@cabidu.com>",
