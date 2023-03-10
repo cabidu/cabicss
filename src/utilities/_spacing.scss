@@ -1,4 +1,8 @@
 @for $i from 0 through $spaces-count {
+  .m#{$i} {
+    margin: var(--space-#{$i});
+  }
+
   .mt#{$i} {
     margin-top: var(--space-#{$i});
   }
@@ -79,6 +83,10 @@
 }
 
 @for $i from 0 through $spaces-count {
+  .p#{$i} {
+    padding: var(--space-#{$i});
+  }
+
   .pt#{$i} {
     padding-top: var(--space-#{$i});
   }

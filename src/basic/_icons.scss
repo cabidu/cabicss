@@ -13,12 +13,7 @@
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
-}
 
-.icon--prefix {
-  margin-right: var(--space-2);
-}
-
-.icon--suffix {
-  margin-left: var(--space-2);
+  // Custom styles
+  vertical-align: middle;
 }

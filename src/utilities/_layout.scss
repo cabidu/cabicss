@@ -19,6 +19,7 @@
 @for $i from 0 through 6 {
   .s#{$i} {
     flex: #{$i};
+    min-width: 0;
   }
 }
 
@@ -80,4 +81,20 @@
 
 .space-evenly {
   justify-content: space-evenly;
+}
+
+.block {
+  display: block;
+}
+
+.iblock {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.iflex {
+  display: inline-flex;
 }

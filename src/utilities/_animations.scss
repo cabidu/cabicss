@@ -1,8 +1,25 @@
+.spin {
+  animation: spin .4s infinite linear;
+}
+
+.pulse {
+  animation: pulse .4s infinite linear;
+}
+
 @keyframes spin {
   0% {
-    ransform:rotate(0)
+    transform: rotate(0);
   }
-  100%{
-    transform:rotate(360deg)
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
