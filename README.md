@@ -11,7 +11,8 @@ Simple and easy. Just choose you way:
 Just link directly from https://unpkg.com/ or https://www.jsdelivr.com/
 
 `<link rel="stylesheet" href="https://unpkg.com/cabicss/dist/styles.min.css">`
-`<link rel="stylesheet" href="https://www.jsdelivr.com/cabicss/dist/styles.min.css">`
+
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cabicss/dist/styles.min.css">`
 
 ### Install locally
 
