@@ -1,6 +1,6 @@
 {
   "name": "cabicss",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple, lightweight, nice looking and straightforward CSS styles lib for general usage provided by cabidu.",
   "main": "src/index.scss",
   "repository": "git@github.com:cabidu/cabicss.git",
